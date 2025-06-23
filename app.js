@@ -37,6 +37,8 @@ const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&app
 
 
 
-app.listen(4001, function() {
-    console.log('Server is running on port 4001');
-})
+
+const PORT = process.env.PORT || 4001;
+app.listen(PORT, function() {
+    console.log('Server is running on port ' + PORT);
+});
